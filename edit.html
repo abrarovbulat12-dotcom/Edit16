@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit16 — Floral Studio</title>
+
+  <style>
+    :root {
+      --bg: #f6f5f2;
+      --accent: #a3b18a;
+      --text: #2f2f2f;
+      --muted: #7a7a7a;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 20px;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .price {
+      margin-top: 6px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .btn {
+      margin-top: 16px;
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 30px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background .3s;
+    }
+
+    .btn:hover {
+      background: #8f9f78;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Edit16</h1>
+    <p>Floral studio · modern aesthetics</p>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526045431048-01a4b48a30b6" alt="Bouquet">
+        <h3>Soft Bloom</h3>
+        <div class="price">4 900 ₽</div>
+        <a href="#" class="btn">Заказать</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Bouquet">
+        <h3>Olive Mood</h3>
+        <div class="price">6 200 ₽</div>
+        <a href="#" class="btn">Заказать</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" alt="Bouquet">
+        <h3>White Silence</h3>
+        <div class="price">5 500 ₽</div>
+        <a href="#" class="btn">Заказать</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Edit16 · Flowers with feeling
+  </footer>
+
+</body>
+</html>
